@@ -1,9 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
 }
 
 img {
     width: 100%;
+}
+
+.container {
+    padding: 30px;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 100px;
+    margin: 50px auto;
+}
+
+.top-part-paragraph {
+    padding: 25px 0;
+}
+
+.download-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.download-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+    margin-bottom: 80px;
+}
+
+.eyeoes,
+.macoes {
+    padding: 20px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.eyeoes {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.macoes {
+    background-color: hsl(233, 100%, 69%);
+}
+
+.top-part p {
+    line-height: 30px;
+}
+
+.keep-track-paragraph {
+    padding: 30px 0;
+    line-height: 25px;
+}
+
+.workflow-flex img {
+    width: 50px;
+}
+
+.workflow-flex {
+    padding: 50px 0;
+}
+
+.blacklists,
+.plaintext,
+.preview {
+    padding: 15px 0;
+}
+
+.snippets {
+    margin-bottom: 30px;
+}
+
+.search-snippet,
+.sync-snippet,
+.history-snippet {
+    padding: 10px 0;
+}
+
+.search-snippet p,
+.sync-snippet p,
+.history-snippet p,
+.blacklists p,
+.plaintext p,
+.preview p {
+    padding: 20px 0;
+}
+
+.clipboard-paragraph,
+.workflow-paragraph,
+.btm-part-paragraph {
+    padding: 20px 0;
+    line-height: 25px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin: 110px 0;
+}
+
+.icons img {
+    max-width: 150px;
+}
+
+.the-end {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.end-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.end-icons img {
+    max-width: 25px;
+}
+
+.footer-logo {
+    max-width: 50px;
+    margin: auto;
+}
+
+.footer-links a {
+    color: black;
+}
+
+@media (min-width: 698px) {
+    .download-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .download-links a {
+        padding: 15px 44px;
+    }
+
+    .keep-track-flex {
+        display: flex;
+    }
+    .workflow-flex {
+        display: flex;
+    }
+
+    .icons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .the-end {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-logo {
+        margin: 0;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
